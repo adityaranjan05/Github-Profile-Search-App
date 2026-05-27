@@ -29,25 +29,27 @@ body {
     flex-direction: column;
     background: linear-gradient(115deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-    width: 25vw;
+    width: 30vw;
     height: auto;
     padding: 1.2rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
 }
 
 .searchBar{
     display: flex;
     align-items: center;
     gap: 1rem;
+    width: 100%;
 }
 
 #idSearch {
     padding: 0.8rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     font-size: 1rem;
     background: rgba(255,255,255,0.25);
     border: 0.1rem solid black;
     z-index: 1;
+    flex: 1;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
     color: black;
     transition: all 0.2s ease-in-out;
@@ -69,7 +71,7 @@ body {
 #search_btn {
     font-size: 1rem;
     padding: 0.8rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     background: orange;
     z-index: 1;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
