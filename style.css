@@ -23,6 +23,15 @@ body {
     min-height: 100vh;
 }
 
+#title {
+    display: flex;
+    justify-content: flex-start;
+    width: 40vw;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: white;
+}
+
 #app_content {
     display: flex;
     justify-content: center;
