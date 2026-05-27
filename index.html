@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Github Profile App</title>
   </head>
   <body>
-    
+    <div id="app_wrapper">
+      <div id="app_content">
+        <div class="searchBar">
+          <input
+            type="text"
+            name="idSearch"
+            id="idSearch"
+            placeholder="Enter a GitHub Id to search"
+          />
+          <button id="search_btn" onclick="searchID()">Search</button>
+        </div>
+        <div id="content_wrapper"></div>
+      </div>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
