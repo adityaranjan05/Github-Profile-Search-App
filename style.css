@@ -11,7 +11,8 @@ body {
     background: linear-gradient(to right, #000000, #152331);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
 }
 
 #app_wrapper {
@@ -94,6 +95,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    /* padding: 1.2rem; */
     width: 100%;
 }
 
@@ -107,12 +109,70 @@ body {
 
 .avatar:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8);
+    scale: 1.05;
 }
 
 .user_info h2{
-    font-size: 1.7rem
+    font-size: 1.7rem;
 }
 
 .user_info ul li , p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+}
+
+.loading {
+    margin-top: 2rem;
+}
+
+.error {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px){
+
+    #app_content{
+        width: 85vw;
+        padding: 1.2rem;
+    }
+
+    .searchBar{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #idSearch{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    #search_btn{
+        width: 100%;
+    }
+
+    #card{
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .avatar{
+        height: 18vh;
+        margin-top: 1rem;
+    }
+
+    .user_info h2{
+        font-size: 1.3rem;
+    }
+
+    .user_info p,
+    .user_info ul li{
+        font-size: 1rem;
+    }
+
+    .user_info ul{
+        list-style: none;
+        margin-top: 1rem;
+    }
+
 }
