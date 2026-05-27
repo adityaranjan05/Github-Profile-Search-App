@@ -27,4 +27,61 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(115deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    width: 25vw;
+    height: auto;
+    padding: 1.2rem;
+    border-radius: 2rem;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#idSearch {
+    padding: 0.8rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.25);
+    border: 0.1rem solid black;
+    z-index: 1;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+#idSearch:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8);
+}
+
+#idSearch::placeholder {
+    color: #3b3a3a;
+}
+
+#idSearch:focus {
+    outline: none;
+    border: 1px solid #212121;
+}
+
+#search_btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    background: orange;
+    z-index: 1;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    border: 0.1rem solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+#search_btn:hover {
+    scale: 1.05;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8);
+}
+
+#search_btn:active {
+    scale: 0.9;
 }
